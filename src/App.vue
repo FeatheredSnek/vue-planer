@@ -4,8 +4,12 @@
     <div class="header-wrap">
       <div class="header-left"><strong>vue</strong>Planer</div>
       <div class="header-right">
-        <button @click="this.loadButtonEnabled ? loadRandomClasses() : ''">Load some random classes</button>
-        <button >Code on Github</button>
+        <a class="header-button" @click="this.loadButtonEnabled ? loadRandomClasses() : ''">
+          Load some random classes
+        </a>
+        <a class="header-button" href="https://github.com/FeatheredSnek/vue-planer" target="_blank">
+          Code on GitHub
+        </a>
       </div>
     </div>
   </header>
@@ -72,7 +76,8 @@ header {
 }
 .header-right {
 }
-.header-right > button {
+.header-button {
+  display: inline-block;
   font-weight: 300;
   height: 2.5rem;
   border: 1px solid white;
@@ -82,8 +87,13 @@ header {
   padding: 0 1rem;
   margin: 0 .5rem;
   transition: background-color 0.2s;
+  cursor:pointer;
+  text-decoration:none;
+  font-size: 0.9rem;
+  line-height: 2.3rem;
+  vertical-align: middle;
 }
-.header-right > button:hover {
+.header-button:hover {
   color: #425C81;
   background-color: white;
 }
