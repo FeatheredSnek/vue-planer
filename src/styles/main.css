@@ -1,0 +1,27 @@
+html {
+  font-size: 20px;
+  font-family: Lato, sans-serif;
+  color: #425C81;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  background-color: #F3F4F9;
+}
+
+button {
+  transition: background 0.2s;
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+button:focus {
+  border-width: 2px;
+  outline: none;
+  shadow: none;
+}
