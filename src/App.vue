@@ -60,6 +60,7 @@ header {
   background-color: #425C81;
 }
 .header-wrap {
+  background-color: #425C81;
   height: 100%;
   width: 100%;
   max-width: 1400px;
@@ -73,8 +74,10 @@ header {
 }
 .header-left {
   font-size: 2rem;
+  padding-left: 0.5rem;
 }
 .header-right {
+  padding-right: 0.5rem;
 }
 .header-button {
   display: inline-block;
@@ -100,8 +103,9 @@ header {
 .components-wrap {
   max-width: 1400px;
   min-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 0.5rem;
   margin: auto;
-  padding: 0;
   display: flex;
 }
 </style>
